@@ -206,6 +206,8 @@ type MetricsExporterConfig struct {
 	// InstrumentationScopeMetadataAsTags, if set to true, adds the name and version of the
 	// instrumentation scope that created a metric to the metric tags
 	InstrumentationScopeMetadataAsTags bool `mapstructure:"instrumentation_scope_metadata_as_tags"`
+
+	Interval int64 `mapstructure:"interval"`
 }
 
 // ToTranslatorOpts returns a list of metrics translator options from the metrics config
